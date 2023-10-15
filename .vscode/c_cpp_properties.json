@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [
+        "${workspaceFolder}/libopencm3/include/**",
+        "${workspaceFolder}/app/**"
+      ],
+      "defines": ["STM32F1"],
+      "cStandard": "c99",
+      "cppStandard": "c++14",
+      "intelliSenseMode": "windows-gcc-arm",
+      "compilerPath": "${env:GCC_ARM_PATH}/arm-none-eabi-gcc"
+    }
+  ],
+  "version": 4
+}
