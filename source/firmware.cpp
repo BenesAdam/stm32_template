@@ -23,9 +23,9 @@ int main(void)
     morse_short();
 
     // O
-    morse_long();
-    morse_long();
-    morse_long();
+    // morse_long();
+    // morse_long();
+    // morse_long();
 
     // S
     morse_short();
