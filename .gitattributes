@@ -1,0 +1,2 @@
+# keep LF on the end of line
+/lib/libopencm3/** -text eol=lf

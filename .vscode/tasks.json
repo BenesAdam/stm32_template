@@ -6,18 +6,12 @@
     {
       "label": "build_debug",
       "type": "shell",
-      "options": {
-        "cwd": "app"
-      },
       "command": "make bin",
       "problemMatcher": "$gcc"
     },
     {
       "label": "clean",
       "type": "shell",
-      "options": {
-        "cwd": "app"
-      },
       "command": "make clean"
     }
   ]

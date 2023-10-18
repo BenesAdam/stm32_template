@@ -18,20 +18,31 @@ You'll want to install some extensions to make development smoother
 
 ```bash
 # Clone the repo
-git clone git@github.com:lowbyteproductions/bare-metal-series.git
-cd bare-metal-series
+git clone git@github.com:BenesAdam/stm32_template.git
+cd stm32_template
 
-# Initialise the submodules (libopencm3)
-git submodule init
-git submodule update
+# Make sure you have selected the right version of STM32 F in app makefile
 
-# Build libopencm3
-cd libopencm3
-make
-cd ..
+# Make sure you have right linker script for you version of STM
+
+# Configure libopencm3
+# 1. choose target and remove not used in macro TARGETS in Makefile
+# 2. remove all unnecessary folders in include and lib file.
+#    - all unwanted platforms
+#    - all stm32 f*
+
+# Example for STM32F1
+# remove all but (you can find this in target's makefile in macro VPATH):
+# - cm3
+# - dispatch
+# - ethernet
+# - stm32
+# - usb
+# in stm32 folder remove all folders but:
+# - common
+# - f1
 
 # Build the main application firmware
-cd app
 make
 ```
 

@@ -2,8 +2,8 @@
   "configurations": [
     {
       "name": "ST-Link: Debug Application",
-      "cwd": "${workspaceFolder}/app",
-      "executable": "./firmware.elf",
+      "cwd": "${workspaceFolder}",
+      "executable": "./output/firmware.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "stutil",
@@ -14,8 +14,8 @@
     },
     {
       "name": "ST-Link: Attach to active",
-      "cwd": "${workspaceFolder}/app",
-      "executable": "./firmware.elf",
+      "cwd": "${workspaceFolder}",
+      "executable": "./output/firmware.elf",
       "request": "attach",
       "type": "cortex-debug",
       "servertype": "stutil",
